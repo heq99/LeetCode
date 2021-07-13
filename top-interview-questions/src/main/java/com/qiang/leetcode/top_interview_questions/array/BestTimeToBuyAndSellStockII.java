@@ -1,4 +1,4 @@
-package com.qiang.leetcode.array;
+package com.qiang.leetcode.top_interview_questions.array;
 
 /*
  * https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/564/

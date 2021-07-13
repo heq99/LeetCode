@@ -1,4 +1,4 @@
-package com.qiang.leetcode.array;
+package com.qiang.leetcode.top_interview_questions.array;
 
 import com.qiang.leetcode.utils.Utils;
 
@@ -35,6 +35,6 @@ public class PlusOne {
     public static void main(String[] args) {
         int[] digits = {1};
         PlusOne solution = new PlusOne();
-        Utils.printArray(solution.plusOne(digits));
+        System.out.println(Utils.printArray(solution.plusOne(digits)));
     }
 }

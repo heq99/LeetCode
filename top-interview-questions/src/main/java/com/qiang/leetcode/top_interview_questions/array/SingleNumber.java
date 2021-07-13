@@ -1,4 +1,4 @@
-package com.qiang.leetcode.array;
+package com.qiang.leetcode.top_interview_questions.array;
 
 import java.util.Arrays;
 

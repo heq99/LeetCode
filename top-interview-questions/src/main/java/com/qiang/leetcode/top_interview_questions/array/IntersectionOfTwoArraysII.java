@@ -1,4 +1,4 @@
-package com.qiang.leetcode.array;
+package com.qiang.leetcode.top_interview_questions.array;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -43,7 +43,7 @@ public class IntersectionOfTwoArraysII {
 
         IntersectionOfTwoArraysII solution = new IntersectionOfTwoArraysII();
         int[] result = solution.intersect(nums1, nums2);
-        Utils.printArray(result);
+        System.out.println(Utils.printArray(result));
 
     }
 }

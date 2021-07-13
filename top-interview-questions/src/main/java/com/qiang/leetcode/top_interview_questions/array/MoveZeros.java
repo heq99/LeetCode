@@ -1,4 +1,4 @@
-package com.qiang.leetcode.array;
+package com.qiang.leetcode.top_interview_questions.array;
 
 import com.qiang.leetcode.utils.Utils;
 
@@ -31,31 +31,31 @@ public class MoveZeros {
         int[] nums1 = {0,1,0,3,12};
         MoveZeros moveZeros = new MoveZeros();
         moveZeros.moveZeroes(nums1);
-        Utils.printArray(nums1);
-
+        
+        System.out.println(Utils.printArray(nums1));
         int[] nums2 = {0};
         moveZeros.moveZeroes(nums2);
-        Utils.printArray(nums2);
-
+        
+        System.out.println(Utils.printArray(nums2));
         int[] nums3 = {0, 1};
         moveZeros.moveZeroes(nums3);
-        Utils.printArray(nums3);
-
+        
+        System.out.println(Utils.printArray(nums3));
         int[] nums4 = {1, 0};
         moveZeros.moveZeroes(nums4);
-        Utils.printArray(nums4);
-
+        
+        System.out.println(Utils.printArray(nums4));
         int[] nums5 = {1, 0, 0};
         moveZeros.moveZeroes(nums5);
-        Utils.printArray(nums5);
+        System.out.println(Utils.printArray(nums5));
 
         int[] nums6 = {0, 0, 1};
         moveZeros.moveZeroes(nums6);
-        Utils.printArray(nums6);
+        System.out.println(Utils.printArray(nums6));
 
         int[] nums7 = {1, 2, 3, 0, 0, 0, 4, 5, 0, 6};
         moveZeros.moveZeroes(nums7);
-        Utils.printArray(nums7);
+        System.out.println(Utils.printArray(nums7));
     }
 }
 

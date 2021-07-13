@@ -10,17 +10,12 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>top-interview-questions</artifactId>
+  <artifactId>utils</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>Top Interview Question</name>
+  <name>Utils</name>
 
   <dependencies>
-    <dependency>
-      <groupId>com.qiang.leetcode</groupId>
-      <artifactId>utils</artifactId>
-      <version>${project.version}</version>
-    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

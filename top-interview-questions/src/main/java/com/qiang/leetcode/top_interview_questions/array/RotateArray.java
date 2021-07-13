@@ -1,4 +1,4 @@
-package com.qiang.leetcode.array;
+package com.qiang.leetcode.top_interview_questions.array;
 
 import com.qiang.leetcode.utils.Utils;
 
@@ -32,11 +32,11 @@ public class RotateArray {
         int k = 3;
 
         System.out.print("Original array: ");
-        Utils.printArray(nums);
         RotateArray solution = new RotateArray();
+        System.out.println(Utils.printArray(nums));
         int[] rotated = solution.rotate(nums, k);
         System.out.print("Rotated array: ");
-        Utils.printArray(rotated);
+        System.out.println(Utils.printArray(rotated));
     }
     
 }
