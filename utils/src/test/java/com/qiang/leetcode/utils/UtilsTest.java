@@ -14,7 +14,8 @@ public class UtilsTest
 
     @Test(expected = NullPointerException.class)
     public void testPrintArrayNullInput() {
-        String output = Utils.printArray(null);
+        int[] array = null;
+        String output = Utils.printArray(array);
         Assert.assertEquals("[]", output);
     }
 
