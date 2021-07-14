@@ -33,7 +33,7 @@ import com.qiang.leetcode.utils.Utils;
  */
 public class RotateArray {
 
-    public int[] rotate(int[] nums, int k) {
+    public static void rotate(int[] nums, int k) {
         k = k % nums.length;
         int count = 0;
         for (int i=0; i<k; i++) {
@@ -49,20 +49,46 @@ public class RotateArray {
             } while (count < nums.length && pos != i);
             if (count == nums.length) break;
         }
-        return nums;
+        // return nums;
+    }
+
+    public static void rotate1(int[] nums, int k) {
+        if (k>=nums.length) {
+            k = k % nums.length;
+        }
+        
+        int[] temp = new int[k];
+        for (int i=0; i<k; i++) {
+            temp[i] = nums[i];
+        }
+        
+        for (int i=nums.length-1; i>=k; i--) {
+            int newPos = (i+k)>=nums.length ? (i+k)%nums.length : i+k;
+            nums[newPos] = nums[i];
+        }
+        
+        for (int i=k; i<k+k; i++) {
+            int newPos = (i>=nums.length ? i%nums.length : i);
+            nums[newPos] = temp[i-k];
+        }
     }
 
     public static void main(String[] args) {
 
-        int[] nums = {1,2,3,4,5,6,7};
+        int[] nums1 = {1,2,3,4,5,6,7};
         int k = 3;
 
-        System.out.print("Original array: ");
-        RotateArray solution = new RotateArray();
-        System.out.println(Utils.printArray(nums));
-        int[] rotated = solution.rotate(nums, k);
-        System.out.print("Rotated array: ");
-        System.out.println(Utils.printArray(rotated));
+        System.out.println("Original array: " + Utils.printArray(nums1));
+        rotate(nums1, k);
+        System.out.println("Rotated array: " + Utils.printArray(nums1));
+
+        System.out.println();
+
+        int[] nums2 = {1,2,3,4,5,6,7};
+        System.out.println("Original array: " + Utils.printArray(nums2));
+        rotate1(nums2, k);
+        System.out.println("Rotated array: " + Utils.printArray(nums2));
+
     }
     
 }
