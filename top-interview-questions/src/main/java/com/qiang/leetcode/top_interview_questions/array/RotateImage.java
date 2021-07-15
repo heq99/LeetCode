@@ -1,7 +1,5 @@
 package com.qiang.leetcode.top_interview_questions.array;
 
-import java.util.Formatter;
-
 /*
  * https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/770/
  * 
